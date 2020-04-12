@@ -7,4 +7,4 @@ print(start_time)
 
 print(netifaces.interfaces())
 
-print(netifaces('wlan0'))
+print(netifaces.ifaddresses('wlan0'))
