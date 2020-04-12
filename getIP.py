@@ -5,6 +5,6 @@ t = time.localtime()
 start_time = time.strftime("%H:%M:%S", t)
 print(start_time)
 
-print(netifaces.interfaces())
+interface = netifaces.ifaddresses('wlan0')
 
-print(netifaces.ifaddresses('wlan0'))
+print(interface[netifaces.AF_INET])
